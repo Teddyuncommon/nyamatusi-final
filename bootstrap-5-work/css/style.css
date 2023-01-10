@@ -1,0 +1,878 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-weight: gotham;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: black;
+ }
+ 
+ .brand-title {
+   font-size: 1.5rem;
+   margin: 0.5rem;
+ }
+ 
+ .navbar-links ul {
+   margin: 0;
+   padding: 0;
+   display: flex;
+ }
+ 
+ .navbar-links li {
+   list-style: none;
+ }
+ 
+ .navbar-links a:hover {
+   color: blueviolet;
+ }
+ 
+ .navbar-links li a {
+   text-decoration: none;
+   color: red;
+   padding: 1rem;
+   display: block;
+ }
+ 
+ .toggle-button {
+   position: absolute;
+   top: 0.75rem;
+   right: 1rem;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 21px;
+ }
+ 
+ .toggle-button .bar {
+   height: 3px;
+   width: 100%;
+   background-color: black;
+   border-radius: 10px;
+ }
+ 
+ @media (max-width: 768px) {
+   .toggle-button {
+     display: flex;
+   }
+ 
+   .navbar-links {
+     display: none;
+     width: 100%;
+   }
+ 
+   .navbar {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .navbar-links ul {
+     width: 100%;
+     flex-direction: column;
+   }
+   /* Brings nav links to the center */
+   .navbar-links li {
+     text-align: center;
+   }
+ 
+   /* Brings the nav links closer */
+   .navbar-links li a {
+     padding: 0.5rem 1rem;
+   }
+ 
+   .navbar-links li a:hover {
+     background-color: blueviolet;
+     color: black;
+   }
+ 
+   .navbar-links.active {
+     display: flex;
+   }
+ }
+ hr {
+   background-color: white;
+   border: 5px;
+   width: 100%;
+ }
+.hero{
+    background-image: url(../image/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.induldge{
+    font-size: 130px;
+}
+.nyamutusi{
+    font-size: 30px;
+    color: red;
+    font-family: papyrus;
+    font-style: italic;
+}
+
+.induldge {
+   font-size: 130px;
+   position: relative;
+   margin-left: 300px;
+   top: 150px;
+   color: white;
+ }
+ .down {
+   position: relative;
+   top: 350px;
+   left: 600px;
+   animation: bounce 0.9s infinite;
+ }
+ .icons {
+   position: relative;
+   margin-right: 30px;
+   bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-end;
+   gap: 30px;
+ }
+
+.stories-section .col-md-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.col-md-4 .img-fluid{
+    position: relative;
+    bottom: 80px;
+   padding: 200px 0px;
+}
+.stories-section {
+   padding: 120px;
+   width: 100%;
+ 
+}
+.stories-section .text2{
+ margin-top: 100px;
+ color: black;
+ font-weight: 500;
+   
+ }
+ 
+ .stories-section button{
+    background-color: orangered;  
+    color: white;
+    border: none;
+    width: 130px;
+    height: 60px;
+   
+ }
+ 
+ .col-md-3 .img-fluid{
+    position: relative;
+    bottom: 80px;
+    padding: 15px 0px;
+ }
+
+ .activities{
+   display: flex;
+   flex-direction: row;
+   padding: 120px;
+   bottom: 200px;
+   position: relative;
+ 
+  
+
+}
+.activity1 h5,.activity2 h5,.activity3 h5,.activity4 h5,.activity5 h5{opacity: 90%;}
+.activity1{
+   background-image: url(../image/activity1\ copy.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+ 
+   background-position: center;
+   background-size: cover;
+   width: 400px;
+   height: 400px;
+   color: white;
+   
+   
+}
+.activity2{
+   background-image: url(../image/activty2.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   width: 300px;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   color: white;
+
+}
+.activity3{
+   background-image: url(../image/activity3.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   width: 300px;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   color: white;
+ 
+}
+.activity4{
+   background-image: url(../image/activity4.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   width: 300px;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   color: white;
+  
+}
+.activity5{
+   background-image: url(../image/activity5.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   width: 300px;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   color: white;
+   
+}
+.activities .col-md-12{
+   display: flex;
+   gap: 10px;
+ 
+
+
+}
+.activity1:hover .overlay1{
+  height: 100%;
+  color: white;
+}
+.activity2:hover .overlay2{
+  height: 100%;
+  color: white;
+}
+.activity3:hover .overlay3{
+  height: 100%;
+  color: white;
+}
+.activity4:hover .overlay4{
+  height: 100%;
+  color: white;
+}
+.activity5:hover .overlay5{
+  height: 100%;
+  color: white;
+}
+
+.overlay1{
+  transition:0.5s ease-in;
+   width: 100%;
+   height: 0%;
+   background-color: rgba(0, 0, 0, 0.223);
+   overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-end;
+}
+.overlay2{
+  transition:0.5s ease-in;
+   width: 100%;
+   height: 0%;
+   background-color: rgba(0, 0, 0, 0.223);
+   overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+.overlay3{
+  transition:0.5s ease-in;
+   width: 100%;
+   height: 0%;
+   background-color: rgba(0, 0, 0, 0.223);
+   overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+.overlay4{
+  transition:0.5s ease-in;
+   width: 100%;
+   height: 0%;
+   background-color: rgba(0, 0, 0, 0.223);
+   overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+.overlay5{
+  transition:0.5s ease-in;
+   width: 100%;
+   height: 0%;
+   background-color: rgba(0, 0, 0, 0.223);
+   overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+ .div1{
+    background-color:white;
+ }
+ 
+
+
+
+ .sightings{
+    width: 100%;
+    padding: 90px;
+    position: relative;
+    bottom: 350px;
+ }
+ .sightings .col-md-12 img{
+    width: 230px;
+    height: 270px;
+    margin: 8px;
+    position: relative;
+    top:100px ;
+ }
+ .recents2{
+    position: relative;
+    top: 70px;
+    
+ }
+ .recents3{
+    position: relative;
+    bottom: 100px;
+    
+ }
+ .rectext{
+   color: black;
+ }
+ .row2{
+    position: relative;
+    bottom:289px ;
+ }
+
+ .recents6{
+    position: relative;
+   bottom: 190px;
+   right: 0px;
+  
+ }
+ p{
+    color: white;
+    font-weight: lighter;
+ }
+
+
+ .row3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 100px;
+    background-color: rgb(246, 85, 22);
+  
+  color: white;
+  width: 300px;
+}
+.row3 p{
+    color: white;
+}
+
+.container2   img{
+    position: relative;
+    top: 100px;  
+}
+
+
+ 
+ 
+ 
+ .iteneries{
+    display: flex;
+    padding: 120px;
+    position: relative;
+    bottom: 600px;    
+  }
+  .iteneries .col-md-6{
+    display: flex;
+   
+  }
+  .tour{
+    width: 800px;
+    height: 417px;
+   
+ 
+  }
+  .iteneries-info{
+    display: flex;
+    flex-direction: row;
+    text-align: flex-start;
+    padding: 6px 5px;
+    background-color: orangered;
+    color: white;
+    line-height: 20px;
+  }
+  .ammount{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin: 10px 0px;
+  }
+  .col-md-6 .destinations{
+    display: flex;
+    gap: 20px;
+  }
+  .iteneries h1{
+    margin: 80px 0px;
+  }.destination1{
+    background-image: url(../image/itenaries2.png);
+   background-position: center;
+   background-size: cover;
+    width: 280px;
+    height: 417px;
+    color: white;
+    font-style: italic;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 13px;
+    
+ 
+  }
+ .destination2{
+    background-image: url(../image/itenaries3.png ); 
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 417px;
+    color: white;
+    font-style: italic;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 13px;
+ }
+ h4{
+    opacity: 90%;
+    font-weight: 200;
+ }
+
+ .jacob{
+    background-image: url(../image/jacob.png);
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 417px;
+    transition: 0.4s;
+ }
+ .jacob:hover{
+    transform: scale(1.2);
+ }
+ 
+ .brown{
+    background-image: url(../image/brown.png);
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 417px;
+    transition: 0.4s;
+ }
+ .brown:hover{
+    transform: scale(1.2);
+ }
+ .text3{
+   color: black;
+ }
+ .testimonials .col-md-6{
+    border: 1px solid orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+ }
+ .testimonials .row{
+    display: flex;
+   justify-content: space-around;
+    
+ }
+ .testimonials{
+    position: relative;
+    bottom: 700px;
+    padding: 120px;
+ }
+ .overlayimg{
+    position: relative;
+    right: 5%;
+    background-image: url(../image/overlay.png);
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 417px;
+    display: flex;
+    color: white;
+    align-items: flex-end;
+    justify-content: center;
+ }
+ .testimonials h1{
+    margin: 60px 0px;
+ }
+   .line{
+    height: 100px;
+    width: 200px;
+    color: orangered;
+   
+ }
+ .rectangle1{
+    height: 290px;
+ } 
+ .rectangle2{
+    width: 100%;
+    height: 255px;  
+ }
+ .gallery{
+    position: relative;
+     bottom: 800px;
+    padding: 120px;
+    height: 40vh;
+ }
+.col-md-3 .img-fluid{
+    position: relative;
+    top: 1px;
+}
+ .gallery h1{
+    margin: 60px 0px;
+ }
+ .footer2{
+    position: relative;
+   width: 100%;
+    background-color: orangered;
+    padding: 40px ;
+    height: 40vh;
+ }
+ 
+ .footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 90px;
+    gap: 120px;
+    opacity: 90%;
+    line-height: 25px;
+ }
+ .footer span{
+   
+    font-style: italic;
+    color: white;
+    opacity: 100%;
+   
+ 
+ }
+ .footer2 .hr1 {
+   background-color: white;
+ }
+ form input{
+    border: none;
+    background-color:white;
+    padding: 10px 30px;
+   
+ }
+  .submitbutton{
+    background-color: black;
+    color: white;
+    position: relative;
+    right: 20px;
+ } 
+ .heart{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom:18px ;
+    left: 230px;
+ 
+ }
+ 
+  .txt{
+   display: flex;
+   justify-content: center;
+   position: relative;
+   align-items: center;
+   color: white;
+ }
+ @media (max-width: 768px) {
+  body {
+    background-color: gray;
+  }
+  .hero {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/banner.png);
+  }
+  .induldge {
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 80px;
+    top: 100px;
+    color: white;
+  }
+  .down {
+    position: relative;
+    top: 300px;
+    left: 300px;
+  }
+  .icons {
+    display: none;
+  }
+  .stories-section {
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+  }
+  .text2 {
+    width: 300px;
+  }
+  .middle {
+    position: relative;
+    bottom: 100px;
+    padding: 200px 0px;
+    margin-left: 30px;
+    bottom: 600px;
+    width: 200px;
+  }
+  .lion {
+    position: relative;
+    top: 100px;
+    margin-left: 30px;
+    width: 230px;
+  }
+  .last {
+    position: relative;
+    bottom: 1100px;
+    margin-left: 30px;
+    width: 230px;
+    height: 300px;
+  }
+  .activities {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 120px;
+    bottom: 80px;
+    position: relative;
+  }
+  .recents {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    top: 10px;
+  }
+  .recents p {
+    width: 400px;
+  }
+  .recents img {
+    width: 100px;
+
+    margin: 8px;
+    position: relative;
+    top: 100px;
+  }
+  .recents2 {
+    position: relative;
+    bottom: 100px;
+    margin-left: 140px;
+  }
+  .recents3 {
+    position: relative;
+    bottom: 350px;
+    margin-left: 280px;
+  }
+  .row2 {
+    position: relative;
+    bottom: 600px;
+    margin-left: 420px;
+    height: 270px;
+  }
+
+  .recents6 {
+    position: relative;
+    bottom: 800px;
+    margin-left: 560px;
+  }
+  .iteneries {
+    position: relative;
+    bottom: 500px;
+  }
+ .destination1{
+    position: relative;
+    top: 500px;
+    right: 200px
+ }
+ .destination2{
+  position: relative;
+  top: 1000px;
+  right: 500px
+}
+.testimonials{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  top: 200px;
+}
+}
+
+
+@media (max-width: 567px) {
+  body {
+    background-color: gray;
+  }
+  .hero {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/banner.png);
+  }
+  .induldge {
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 80px;
+    top: 100px;
+    color: white;
+  }
+  .down {
+    position: relative;
+    top: 300px;
+    left: 300px;
+  }
+  .icons {
+    display: none;
+  }
+  .about {
+    height: 100vh;
+    width: 100%;
+  }
+  .about .txt {
+    width: 300px;
+  }
+  .middle {
+    position: relative;
+    bottom: 100px;
+    padding: 200px 0px;
+    margin-left: 300px;
+    bottom: 600px;
+    width: 200px;
+  }
+  .lion {
+    position: relative;
+    bottom: 1120px;
+    margin-left: 520px;
+    width: 230px;
+  }
+  .last {
+    position: relative;
+    bottom: 1100px;
+    margin-left: 520px;
+    width: 230px;
+    height: 300px;
+  }
+  .activities {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 120px;
+    bottom: 80px;
+    position: relative;
+  }
+  .recents {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    top: 10px;
+  }
+  .recents p {
+    width: 400px;
+  }
+  .recents img {
+    width: 130px;
+
+    margin: 8px;
+    position: relative;
+    top: 100px;
+  }
+  .recents2 {
+    position: relative;
+    bottom: 100px;
+    margin-left: 140px;
+  }
+  .recents3 {
+    position: relative;
+    bottom: 350px;
+    margin-left: 280px;
+  }
+  .row2 {
+    position: relative;
+    bottom: 600px;
+    margin-left: 420px;
+    height: 270px;
+  }
+
+  .recents6 {
+    position: relative;
+    bottom: 800px;
+    margin-left: 560px;
+  }
+  .iteneries {
+    position: relative;
+    bottom: 500px;
+  }
+ .destination1{
+    position: relative;
+    top: 500px;
+    right: 200px
+ }
+ .destination2{
+  position: relative;
+  top: 1000px;
+  right: 500px
+}
+.testimonials{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  top: 200px;
+}
+}
